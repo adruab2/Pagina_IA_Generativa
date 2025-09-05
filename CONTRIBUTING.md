@@ -10,6 +10,7 @@ Este documento sirve para que todo el equipo tenga claras las reglas y pasos bá
    ```bash
    git clone https://github.com/adruab2/Pagina_IA_Regenerativa.git
    cd Pagina_IA_Regenerativa
+   npm install
    ```
 
 2. **Actualiza la rama `master` antes de empezar a trabajar:**

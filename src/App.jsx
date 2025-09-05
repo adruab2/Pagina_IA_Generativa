@@ -1,0 +1,97 @@
+import './App.css'
+
+function App() {
+
+  return (
+    <>
+      {/* Sección superior con encuesta a la derecha */}
+      <header class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Explora el Poder de la IA Generativa</h1>
+            <p>Descubre cómo la inteligencia artificial está transformando la creatividad, los negocios y el aprendizaje.</p>
+          </div>
+          <div class="survey-box">
+            <h2>Contáctate con Nuestros Cursos</h2>
+            <form>
+              <label for="name">Nombre:</label>
+              <input type="text" id="name" name="name" required>
+
+              <label for="email">Correo:</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="interest">Curso de interés:</label>
+              <select id="interest" name="interest">
+                <option>IA para principiantes</option>
+                <option>IA en los negocios</option>
+                <option>IA creativa</option>
+              </select>
+
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </header>
+
+  {/* Sección sobre la IA */}
+  <section class="about">
+    <h2>¿Qué es la IA Generativa?</h2>
+    <p>La IA generativa utiliza modelos avanzados para crear imágenes, textos, música y más. Está revolucionando la manera en que trabajamos y aprendemos.</p>
+  </section>
+
+  {/*  Sección cursos  */}
+  <section class="courses">
+    <h2>Nuestros Cursos</h2>
+    <div class="course-list">
+      <div class="course">
+        <h3>IA para principiantes</h3>
+        <p>Aprende desde cero los fundamentos de la inteligencia artificial.</p>
+      </div>
+      <div class="course">
+        <h3>IA en los negocios</h3>
+        <p>Aplica modelos generativos para optimizar procesos y crear valor.</p>
+      </div>
+      <div class="course">
+        <h3>IA creativa</h3>
+        <p>Explora cómo la IA puede ayudarte a crear contenido artístico único.</p>
+      </div>
+    </div>
+  </section>
+
+  {/*  Sección testimonios  */}
+  <section class="testimonials">
+    <h2>Lo que dicen nuestros estudiantes</h2>
+    <blockquote>"Este curso cambió mi visión sobre la tecnología y la creatividad." - Ana M.</blockquote>
+    <blockquote>"La IA ahora es parte de mi negocio gracias a estas clases." - Carlos G.</blockquote>
+  </section>
+
+      {/*  Encuesta inferior */}
+      <section class="survey-bottom">
+        <h2>¡Inscríbete en Nuestros Cursos!</h2>
+        <form>
+          <label for="name-bottom">Nombre:</label>
+          <input type="text" id="name-bottom" name="name-bottom" required>
+
+          <label for="email-bottom">Correo:</label>
+          <input type="email" id="email-bottom" name="email-bottom" required>
+
+          <label for="interest-bottom">Curso de interés:</label>
+          <select id="interest-bottom" name="interest-bottom">
+            <option>IA para principiantes</option>
+            <option>IA en los negocios</option>
+            <option>IA creativa</option>
+          </select>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+
+      {/* Footer */}
+      <footer>
+        <p>&copy; 2025 IA Generativa. Todos los derechos reservados.</p>
+      </footer>
+    </>
+  )
+}
+
+export default App
