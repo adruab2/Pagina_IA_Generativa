@@ -40,7 +40,7 @@ Este documento sirve para que todo el equipo tenga claras las reglas y pasos bá
      O si tienes varios archivos específicos:
 
      ```bash
-        git add archivo1 archivo2
+     git add archivo1 archivo2
      ```
 
    - Para revisar qué archivos han cambiado antes de añadirlos, usa:
