@@ -15,10 +15,10 @@ function App() {
             <h2>Contáctate con Nuestros Cursos</h2>
             <form>
               <label for="name">Nombre:</label>
-              <input type="text" id="name" name="name" required>
+              <input type="text" id="name" name="name" required/>
 
               <label for="email">Correo:</label>
-              <input type="email" id="email" name="email" required>
+              <input type="email" id="email" name="email" required/>
 
               <label for="interest">Curso de interés:</label>
               <select id="interest" name="interest">
@@ -70,10 +70,10 @@ function App() {
         <h2>¡Inscríbete en Nuestros Cursos!</h2>
         <form>
           <label for="name-bottom">Nombre:</label>
-          <input type="text" id="name-bottom" name="name-bottom" required>
+          <input type="text" id="name-bottom" name="name-bottom" required/>
 
           <label for="email-bottom">Correo:</label>
-          <input type="email" id="email-bottom" name="email-bottom" required>
+          <input type="email" id="email-bottom" name="email-bottom" required/>
 
           <label for="interest-bottom">Curso de interés:</label>
           <select id="interest-bottom" name="interest-bottom">
