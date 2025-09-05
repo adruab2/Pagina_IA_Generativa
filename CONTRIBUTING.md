@@ -25,10 +25,24 @@ Este documento sirve para que todo el equipo tenga claras las reglas y pasos bá
 
 4. **Haz tus cambios en el código.**
 
-5. **Agrega los archivos modificados al área de staging:**
-   ```bash
-   git add .
-   ```
+5. **Agregar los archivos modificados al área de staging:**
+
+   - Añade solo los archivos que realmente quieres incluir en el commit:
+
+     ```bash
+     git add archivo2
+     ```
+
+     O si tienes varios archivos específicos:
+
+     ```bash
+        git add archivo1 archivo2
+    ```
+   - Para revisar qué archivos han cambiado antes de añadirlos, usa:
+
+     ```bash
+     git status
+     ```
 
 6. **Haz commit con un mensaje claro y descriptivo:**
    ```bash
