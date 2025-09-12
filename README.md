@@ -1,12 +1,65 @@
-# React + Vite
+# Página de Cursos de IA Generativa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una landing page desarrollada con **React** y **Vite** para promocionar cursos sobre Inteligencia Artificial Generativa. Permite a los usuarios conocer qué es la IA generativa, explorar los cursos disponibles, leer testimonios de estudiantes y registrarse a través de formularios de contacto.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Sección Hero:** Presentación y formulario de contacto destacado.
+- **¿Qué es la IA Generativa?:** Explicación introductoria.
+- **Listado de Cursos:** Información sobre los cursos ofrecidos.
+- **Testimonios:** Opiniones de estudiantes.
+- **Formulario de Inscripción:** Registro rápido para interesados.
+- **Barra de Navegación:** Acceso rápido a cada sección de la página.
+- **Diseño responsivo:** Adaptado para dispositivos móviles y escritorio.
 
-## Expanding the ESLint configuration
+## Tecnologías utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- CSS
+
+## Instalación y uso
+
+1. Clona el repositorio:
+
+   ```sh
+   git clone <url-del-repositorio>
+   cd Pagina_IA_Regenerativa
+   ```
+
+2. Instala las dependencias:
+
+   ```sh
+   npm install
+   ```
+
+3. Inicia el servidor de desarrollo:
+
+   ```sh
+   npm run dev
+   ```
+
+4. Abre [http://localhost:5173](http://localhost:5173) en tu navegador.
+
+## Estructura del proyecto
+
+```plaintext
+src/
+  components/
+    footer.jsx
+    formulario.jsx
+    header.jsx
+    index.js
+    navbar.jsx
+  App.jsx
+  index.css
+  main.jsx
+```
+
+## Personalización
+
+Puedes modificar los textos, cursos y estilos editando los archivos en la carpeta `src/`.
+
+## Licencia
+
+Proyecto educativo para demostración de landing page de cursos de IA generativa.
