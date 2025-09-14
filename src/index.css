@@ -194,3 +194,51 @@ footer {
     align-items: center;
   }
 }
+
+.navbar {
+  background: #222;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+  height: 60px;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  background: #2575fc;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    padding: 10px 0;
+  }
+}
