@@ -69,6 +69,7 @@ Este documento sirve para que todo el equipo tenga claras las reglas y pasos bá
    ```
 
 9. **Sube tus cambios al repositorio remoto:**
+
    ```bash
    git push origin master
    ```
