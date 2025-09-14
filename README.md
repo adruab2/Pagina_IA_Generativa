@@ -16,7 +16,7 @@ Este proyecto es una landing page desarrollada con **React** y **Vite** para pro
 
 - [React](https://react.dev/)
 - [Vite](https://vitejs.dev/)
-- CSS
+- [Tailwind CSS](https://tailwindcss.com/) 
 
 ## Instalación y uso
 
