@@ -5,6 +5,7 @@ function App() {
     <>
       <Navbar />
       {/* Sección superior con encuesta a la derecha */}
+            {/* pr*/}
       <Header />
 
       {/* Sección sobre la IA */}
