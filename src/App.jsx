@@ -77,24 +77,9 @@ function App() {
         </div>
       </section>
 
-      {/*  Sección cursos  */}
-      <section className="courses" id="courses">
-        <h2>Nuestros Cursos</h2>
-        <div className="course-list">
-          <div className="course">
-            <h3>IA para principiantes</h3>
-            <p>Aprende desde cero los fundamentos de la inteligencia artificial.</p>
-          </div>
-          <div className="course">
-            <h3>IA en los negocios</h3>
-            <p>Aplica modelos generativos para optimizar procesos y crear valor.</p>
-          </div>
-          <div className="course">
-            <h3>IA creativa</h3>
-            <p>Explora cómo la IA puede ayudarte a crear contenido artístico único.</p>
-          </div>
-        </div>
-      </section>
+      {/* Sección Cursos Mejorada */}
+
+      <CourseCard/>
 
       {/*  Sección testimonios  */}
       <section
