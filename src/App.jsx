@@ -1,4 +1,4 @@
-import { Navbar, Header, Footer, Formulario, TestimoniosInteractivos } from './components';
+import { Navbar, Header, Footer, Formulario, TestimoniosInteractivos, CourseCard} from './components';
 
 function App() {
   return (
