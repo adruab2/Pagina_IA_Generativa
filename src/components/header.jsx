@@ -19,7 +19,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="relative w-full h-[450px] md:h-[500px] overflow-hidden" id="hero">
+    <header className="relative w-full min-h-[450px] md:h-[500px] overflow-hidden p-16" id="hero">
       {carouselImages.map((src, i) => (
         <img
           key={i}
