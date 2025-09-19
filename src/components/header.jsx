@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Formulario from "./formulario";
+import FormularioHeader from "./formularioHeader";
 
 const carouselImages = [
   "https://marketinlife.com/wp-content/uploads/2024/02/Inteligencia-Artificial-generativa_2253228203.jpg",
@@ -48,7 +48,7 @@ const Header = () => {
           <h2 className="text-xl md:text-2xl font-semibold mb-4 text-gray-800">
             Contáctate con Nosotros
           </h2>
-          <Formulario />
+          <FormularioHeader />
         </div>
       </div>
     </header>
