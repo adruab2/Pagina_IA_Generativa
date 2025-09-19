@@ -3,8 +3,13 @@ import NavLink from './navLink';
 const DesktopMenu = ({ isScrolled, menuItems }) => {
   return (
     <div className="hidden md:flex justify-between items-center py-4">
-      <div className="text-xl font-bold ml-4">
-        <span className={isScrolled ? 'text-gray-800' : 'text-white'}>
+      <div className="flex items-center ml-4">
+        <img 
+          src="/logo.png"
+          alt="IA Academy Logo" 
+          className="h-8 w-8 mr-2"
+        />
+        <span className={`text-xl font-bold ${isScrolled ? 'text-gray-800' : 'text-white'}`}>
           IA Academy
         </span>
       </div>
