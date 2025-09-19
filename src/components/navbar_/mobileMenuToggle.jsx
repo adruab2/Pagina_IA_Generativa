@@ -11,7 +11,7 @@ const MobileMenuToggle = ({ isScrolled, isMobileMenuOpen, onToggle }) => {
           className="h-8 w-8 mr-2"
         />
         <span className={isScrolled ? 'text-gray-800' : 'text-white'}>
-          IA Academy
+          IA Generation Academy
         </span>
       </div>
       
