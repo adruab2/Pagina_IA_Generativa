@@ -10,7 +10,7 @@ const DesktopMenu = ({ isScrolled, menuItems }) => {
           className="h-8 w-8 mr-2"
         />
         <span className={`text-xl font-bold ${isScrolled ? 'text-gray-800' : 'text-white'}`}>
-          IA Academy
+          IA Generation Academy
         </span>
       </div>
       <ul className="flex justify-center gap-8">
