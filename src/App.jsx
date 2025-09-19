@@ -93,8 +93,7 @@ function App() {
       </section>
 
       {/*  Encuesta inferior */}
-      <section className="survey-bottom" id="inscripcion">
-        <h2>¡Inscríbete en Nuestros Cursos!</h2>
+      <section id="inscripcion">
         <Formulario />
       </section>
 
