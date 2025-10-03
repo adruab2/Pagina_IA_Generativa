@@ -1,17 +1,15 @@
-import { useState } from "react";
 import { PromotionBar, Navbar, Header, Footer, Formulario, TestimoniosInteractivos, CourseCard } from './components';
 
 function App() {
-  const [promoVisible, setPromoVisible] = useState(true);
-
   return (
     <>
-      {/* Barra de Halloween */}
-      {promoVisible && <PromotionBar onClose={setPromoVisible} />}
+      {/* Barra de Halloween (siempre visible) */}
+      <PromotionBar />
 
-      {/* Wrapper con padding dinámico */}
-      <div className={promoVisible ? "pt-10" : "pt-0"}>
-        <Navbar promoVisible={promoVisible} />
+      {/* Wrapper con padding fijo para dejar espacio al Navbar */}
+      <div className="pt-10">
+        <Navbar promoVisible={true} />
+        
         {/* Sección superior con encuesta a la derecha */}
         <Header />
 
