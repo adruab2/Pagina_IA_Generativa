@@ -24,7 +24,7 @@ const users = [
     correo: "juan@example.com",
     subscripcion: "Negocios",
     numero: "987654321",
-    contraseña: "******",
+    contraseña: "Juancito222",
     fecha: "2025-01-15",
   },
   {
@@ -32,7 +32,7 @@ const users = [
     correo: "maria@example.com",
     subscripcion: "Principiantes",
     numero: "912345678",
-    contraseña: "******",
+    contraseña: "mariaLOLOLO",
     fecha: "2025-02-20",
   },
   {
@@ -40,7 +40,7 @@ const users = [
     correo: "carlos@example.com",
     subscripcion: "Creativa",
     numero: "987123456",
-    contraseña: "******",
+    contraseña: "carlitos56",
     fecha: "2025-03-05",
   },
 ];
