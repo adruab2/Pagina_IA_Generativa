@@ -5,4 +5,5 @@ export const menuItems = [
   { href: '#testimonials', label: 'Testimonios' },
   { href: '#inscripcion', label: 'Inscríbete' },
   /* { href: '#faq', label: 'Preguntas Frecuentes' } */
+  { label: 'Login', action: 'showLogin' },
 ];

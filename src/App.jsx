@@ -1,6 +1,9 @@
+import React, { useState } from 'react';
 import { PromotionBar, Navbar, Header, Footer, Formulario, TestimoniosInteractivos, CourseCard } from './components';
+import Login from './components/Login';
 
 function App() {
+  const [showLogin, setShowLogin] = useState(false);
   return (
     <>
       {/* Barra de Halloween (siempre visible) */}
@@ -8,7 +11,7 @@ function App() {
 
       {/* Wrapper con padding fijo para dejar espacio al Navbar */}
       <div className="pt-10">
-        <Navbar promoVisible={true} />
+        <Navbar promoVisible={true} onShowLogin={() => setShowLogin(true)} />
         
         {/* Sección superior con encuesta a la derecha */}
         <Header />
@@ -104,6 +107,7 @@ function App() {
 
         {/* Footer */}
         <Footer />
+        {showLogin && <Login onClose={() => setShowLogin(false)} />}
       </div>
     </>
   );
