@@ -1,6 +1,6 @@
 import NavLink from './navLink';
 
-const DesktopMenu = ({ isScrolled, menuItems }) => {
+const DesktopMenu = ({ isScrolled, menuItems, onMenuItemClick }) => {
   return (
     <div className="hidden md:flex justify-between items-center py-4">
       <div className="flex items-center ml-4">
@@ -15,15 +15,30 @@ const DesktopMenu = ({ isScrolled, menuItems }) => {
       </div>
       <ul className="flex justify-center gap-8">
         {menuItems.map((item) => (
-          <li key={item.href}>
-            <NavLink href={item.href} isScrolled={isScrolled}>
-              {item.label}
-            </NavLink>
+          <li key={item.href || item.label}>
+            {item.action === 'showLogin' ? (
+          <button
+             onClick={() => onMenuItemClick(item)}
+             className={`font-bold cursor-pointer transition-colors duration-200
+              ${isScrolled ? 'text-gray-800 hover:text-blue-600' : 'text-white hover:text-blue-400'}`}
+          >
+             {item.label}
+          </button>
+            ) : (
+              <NavLink
+                href={item.href}
+                isScrolled={isScrolled}
+                onClick={() => onMenuItemClick(item)}
+              >
+                {item.label}
+              </NavLink>
+            )}
           </li>
         ))}
       </ul>
     </div>
   );
 };
+
 
 export default DesktopMenu;
