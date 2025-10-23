@@ -1,6 +1,17 @@
-import { PromotionBar, Navbar, Header, Footer, Formulario, TestimoniosInteractivos, CourseCard } from './components';
+import React, { useState } from 'react';
+import {
+  PromotionBar,
+  Navbar,
+  Header,
+  Footer,
+  Formulario,
+  TestimoniosInteractivos,
+  CourseCard,
+  Login,
+} from '../components';
 
-function App() {
+const HomePage = () => {
+  const [showLogin, setShowLogin] = useState(false);
   return (
     <>
       {/* Barra de Halloween (siempre visible) */}
@@ -8,7 +19,7 @@ function App() {
 
       {/* Wrapper con padding fijo para dejar espacio al Navbar */}
       <div className="pt-10">
-        <Navbar promoVisible={true} />
+        <Navbar promoVisible={true} onShowLogin={() => setShowLogin(true)} />
         
         {/* Sección superior con encuesta a la derecha */}
         <Header />
@@ -29,7 +40,8 @@ function App() {
                 style={{ animationDelay: '0.3s' }}
               >
                 La <strong>IA generativa</strong> utiliza modelos avanzados de inteligencia
-                artificial para <span className="text-blue-600">crear imágenes, textos, música y mucho más</span>.
+                artificial para{' '}
+                <span className="text-blue-600">crear imágenes, textos, música y mucho más</span>.
                 Estas herramientas permiten que las computadoras no solo analicen datos, sino que
                 también sean capaces de producir contenido completamente nuevo.
               </p>
@@ -104,9 +116,10 @@ function App() {
 
         {/* Footer */}
         <Footer />
+        {showLogin && <Login onClose={() => setShowLogin(false)} />}
       </div>
     </>
   );
-}
+};
 
-export default App;
+export default HomePage;

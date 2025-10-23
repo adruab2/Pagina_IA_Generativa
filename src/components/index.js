@@ -6,3 +6,4 @@ export { default as FormularioHeader } from './formularioHeader';
 export { default as Formulario } from './formulario';
 export { default as TestimoniosInteractivos } from './testimoniosInteractivos';
 export { default as CourseCard } from './CourseCard';
+export { default as Login } from './Login';
