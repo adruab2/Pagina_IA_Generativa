@@ -9,6 +9,7 @@ import { RouterProvider, createRouter } from '@tanstack/react-router';
 import { routeTree } from '@/routeTree.gen';
 import { ErrorBoundary } from '@/components/ErrorBoundary';
 import { AppProvider } from '@/contexts/AppContext';
+import { AuthProvider } from '@/contexts/AuthContext';
 import LoadingSpinner from '@/components/LoadingSpinner';
 
 
@@ -20,11 +21,13 @@ if (rootElement && !rootElement.innerHTML) {
   root.render(
     <StrictMode>
       <ErrorBoundary>
-        <AppProvider>
-          <Suspense fallback={<LoadingSpinner />}>
-            <RouterProvider router={router} />
-          </Suspense>
-        </AppProvider>
+        <AuthProvider>
+          <AppProvider>
+            <Suspense fallback={<LoadingSpinner />}>
+              <RouterProvider router={router} />
+            </Suspense>
+          </AppProvider>
+        </AuthProvider>
       </ErrorBoundary>
     </StrictMode>
   );
